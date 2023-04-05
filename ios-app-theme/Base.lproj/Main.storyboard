@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zBj-zJ-HLW">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="zPt-Kl-LuJ">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="zBj-zJ-HLW" customClass="LoginViewController" customModule="ios_app_theme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xWM-yE-geW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUp-Uh-vW8">
+                                <rect key="frame" x="0.0" y="47" width="390" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to App 🍀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRs-bS-zHf" customClass="AppLabel" customModule="ios_app_theme" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="31.666666666666671" width="153" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="KRs-bS-zHf" firstAttribute="leading" secondItem="qUp-Uh-vW8" secondAttribute="leading" constant="16" id="4hL-UK-sVC"/>
+                                    <constraint firstAttribute="height" constant="60" id="dgb-P3-dJ4"/>
+                                    <constraint firstAttribute="bottom" secondItem="KRs-bS-zHf" secondAttribute="bottom" constant="8" id="vb5-Ee-led"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ycM-Cw-X6S">
+                                <rect key="frame" x="16" y="123" width="358" height="114.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFx-bU-01T" customClass="AppLabel" customModule="ios_app_theme" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJB-DZ-oB9" customClass="AppTextField" customModule="ios_app_theme" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22.333333333333343" width="358" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfS-S2-N1b" customClass="AppLabel" customModule="ios_app_theme" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58.33333333333335" width="358" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnx-sh-Gtd" customClass="AppTextField" customModule="ios_app_theme" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="80.666666666666657" width="358" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0x-1F-CQj" customClass="AppButton" customModule="ios_app_theme" customModuleProvider="target">
+                                <rect key="frame" x="16" y="253.66666666666663" width="358" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="OSA-Ik-9uD"/>
+                                    <constraint firstAttribute="height" constant="50" id="PhN-XV-9e9"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Aauthenticate User"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUr-wQ-na8" customClass="AppButton" customModule="ios_app_theme" customModuleProvider="target">
+                                <rect key="frame" x="16" y="319.66666666666669" width="358" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fM7-na-qQT"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Reset Password"/>
+                                <connections>
+                                    <action selector="buttonResetPasswordAction:" destination="zBj-zJ-HLW" eventType="touchUpInside" id="pas-bA-a9E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KKJ-E4-pgH"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fUr-wQ-na8" firstAttribute="top" secondItem="M0x-1F-CQj" secondAttribute="bottom" constant="16" id="4Ye-x6-DqC"/>
+                            <constraint firstItem="KKJ-E4-pgH" firstAttribute="trailing" secondItem="fUr-wQ-na8" secondAttribute="trailing" constant="16" id="9Py-gt-cYh"/>
+                            <constraint firstItem="KKJ-E4-pgH" firstAttribute="trailing" secondItem="qUp-Uh-vW8" secondAttribute="trailing" id="9fm-D4-0Nu"/>
+                            <constraint firstItem="qUp-Uh-vW8" firstAttribute="top" secondItem="KKJ-E4-pgH" secondAttribute="top" id="BQc-wP-pJj"/>
+                            <constraint firstItem="qUp-Uh-vW8" firstAttribute="leading" secondItem="KKJ-E4-pgH" secondAttribute="leading" id="ODT-hz-NxL"/>
+                            <constraint firstItem="M0x-1F-CQj" firstAttribute="leading" secondItem="KKJ-E4-pgH" secondAttribute="leading" constant="16" id="aOV-FV-fW8"/>
+                            <constraint firstItem="ycM-Cw-X6S" firstAttribute="top" secondItem="qUp-Uh-vW8" secondAttribute="bottom" constant="16" id="h5D-as-0jB"/>
+                            <constraint firstItem="M0x-1F-CQj" firstAttribute="top" secondItem="ycM-Cw-X6S" secondAttribute="bottom" constant="16" id="j9H-oA-gjo"/>
+                            <constraint firstItem="ycM-Cw-X6S" firstAttribute="leading" secondItem="KKJ-E4-pgH" secondAttribute="leading" constant="16" id="j9d-vx-BuJ"/>
+                            <constraint firstItem="KKJ-E4-pgH" firstAttribute="trailing" secondItem="ycM-Cw-X6S" secondAttribute="trailing" constant="16" id="jFd-Zp-DHZ"/>
+                            <constraint firstItem="fUr-wQ-na8" firstAttribute="leading" secondItem="KKJ-E4-pgH" secondAttribute="leading" constant="16" id="ng8-5c-MZ4"/>
+                            <constraint firstItem="KKJ-E4-pgH" firstAttribute="trailing" secondItem="M0x-1F-CQj" secondAttribute="trailing" constant="16" id="sx5-ct-W7t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLogin" destination="M0x-1F-CQj" id="cdO-of-bOW"/>
+                        <outlet property="buttonResetPassword" destination="fUr-wQ-na8" id="Wxn-RK-OP4"/>
+                        <outlet property="labelTitle" destination="KRs-bS-zHf" id="uoy-bc-WTR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RvH-mA-w1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-857" y="10"/>
+        </scene>
+        <!--Reset View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ResetViewController" id="BYZ-38-t0r" customClass="ResetViewController" customModule="ios_app_theme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="My Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BeE-OW-fyv" customClass="AppTextField" customModule="ios_app_theme" customModuleProvider="target">
+                                <rect key="frame" x="16" y="160" width="358" height="34"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registered Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRJ-uw-KFB" customClass="AppLabel" customModule="ios_app_theme" customModuleProvider="target">
+                                <rect key="frame" x="16" y="123" width="193.66666666666666" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s6y-wf-jSX">
+                                <rect key="frame" x="0.0" y="47" width="390" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9V-6P-NYJ">
+                                        <rect key="frame" x="15.999999999999998" y="19" width="21.333333333333329" height="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="img_back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1lr-vk-Nyv"/>
+                                    <constraint firstItem="x9V-6P-NYJ" firstAttribute="leading" secondItem="s6y-wf-jSX" secondAttribute="leading" constant="16" id="Aau-Kk-YCe"/>
+                                    <constraint firstItem="x9V-6P-NYJ" firstAttribute="centerY" secondItem="s6y-wf-jSX" secondAttribute="centerY" id="rdC-ZF-cZT"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZE-8G-ewO" customClass="AppButton" customModule="ios_app_theme" customModuleProvider="target">
+                                <rect key="frame" x="16" y="210" width="358" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gLa-SY-XbK"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Reset Password"/>
+                                <connections>
+                                    <action selector="buttonLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOG-U0-feS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jRJ-uw-KFB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0Yg-ef-FWp"/>
+                            <constraint firstItem="s6y-wf-jSX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Mq-So-hpV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BeE-OW-fyv" secondAttribute="trailing" constant="16" id="6nr-eT-fKW"/>
+                            <constraint firstItem="s6y-wf-jSX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9f6-Vp-YSo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s6y-wf-jSX" secondAttribute="trailing" id="H54-WL-XkX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZZE-8G-ewO" secondAttribute="trailing" constant="16" id="TFD-04-M6Q"/>
+                            <constraint firstItem="BeE-OW-fyv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZAP-TZ-Bhm"/>
+                            <constraint firstItem="ZZE-8G-ewO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aBP-QO-9DR"/>
+                            <constraint firstItem="ZZE-8G-ewO" firstAttribute="top" secondItem="BeE-OW-fyv" secondAttribute="bottom" constant="16" id="fAN-iR-Rcj"/>
+                            <constraint firstItem="BeE-OW-fyv" firstAttribute="top" secondItem="jRJ-uw-KFB" secondAttribute="bottom" constant="16" id="vPP-rJ-83W"/>
+                            <constraint firstItem="jRJ-uw-KFB" firstAttribute="top" secondItem="s6y-wf-jSX" secondAttribute="bottom" constant="16" id="yJM-OF-6Lz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLogin" destination="ZZE-8G-ewO" id="1uC-Zc-P6P"/>
+                        <outlet property="sampleTextField" destination="BeE-OW-fyv" id="Ne0-Xt-rPB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-48" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_back" width="21.333333969116211" height="21.333333969116211"/>
+    </resources>
+</document>
